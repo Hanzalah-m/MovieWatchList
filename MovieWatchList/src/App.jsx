@@ -5,14 +5,18 @@ import heroImg from './assets/hero.png'
 import Navbar from './Navbar'
 import './App.css'
 import Home from './Home'
+import MyLists from './MyLists'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+      {/* <Navbar />
+      <Home /> */}
+      <MyLists/>
+      
+
       
     </div>
   )
