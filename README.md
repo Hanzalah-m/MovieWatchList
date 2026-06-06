@@ -1,6 +1,6 @@
 # Movie Watchlist App
  
-A React practice project that covers 11 core React concepts — built as a simple movie browsing and watchlist management app.
+A React practice project— built as a simple movie browsing and watchlist management app.
  
 
  
