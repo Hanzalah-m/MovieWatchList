@@ -54,37 +54,3 @@ npm install
 # 3. Start the dev server
 npm run dev
 ```
- 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
- 
----
- 
-## Folder Structure
- 
-```
-src/
-├── components/
-│   ├── Card.jsx          # children prop
-│   ├── MovieList.jsx     # render prop + useMemo filter
-│   ├── Navbar.jsx        # useContext for theme
-│   └── SearchBar.jsx     # lifted state + useRef
-├── pages/
-│   ├── Home.jsx          # browse + search
-│   ├── Watchlist.jsx     # saved movies
-│   └── MovieDetail.jsx   # useParams + conditional rendering
-├── store/
-│   ├── store.js          # Redux configureStore
-│   └── watchlistSlice.js # createSlice — add/remove/toggle
-├── context/
-│   └── ThemeContext.js   # createContext + useContext
-├── hooks/
-│   └── useLocalStorage.js
-├── data/
-│   └── movies.js         # hardcoded movie list
-└── App.jsx               # routes
-```
- 
----
- 
-
- 
