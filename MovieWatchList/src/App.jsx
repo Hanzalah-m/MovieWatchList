@@ -7,6 +7,7 @@ import './App.css'
 import Home from './Home'
 import MyLists from './MyLists'
 import MovieInfoPage from './MovieInfoPage'
+import AddMoviePage from './AddMoviePage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <MyLists/>
 
       <MovieInfoPage/>
+      <AddMoviePage/>
       
 
       

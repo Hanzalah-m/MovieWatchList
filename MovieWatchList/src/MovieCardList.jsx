@@ -3,8 +3,8 @@ import { memo } from 'react';
 const MovieCardList = (props) => {
   return (
     <div>
-      <div class="flex items w-full justify-between py-3">
-                    <div class="flex items-center gap-3">
+      <div class="flex items w-full flex-wrap gap-1.5 justify-between py-3">
+                    <div class="flex items-center gap-6">
                         <div class="h-20 w-15 rounded-2xl overflow-hidden">
                             <img className='w-full h-full object-cover ' src={props.posterimg} alt='movieposter' />
                         </div>
