@@ -1,4 +1,4 @@
-# 🎬 Movie Watchlist App
+# Movie Watchlist App
  
 A React practice project that covers 11 core React concepts — built as a simple movie browsing and watchlist management app.
  
@@ -6,11 +6,11 @@ A React practice project that covers 11 core React concepts — built as a simpl
  
 ---
  
-## 📸 Preview
+## Preview
   
 
  
-## ✨ Features
+## Features
  
 - Browse a curated list of movies
 - Search movies by title in real-time
@@ -22,7 +22,7 @@ A React practice project that covers 11 core React concepts — built as a simpl
 - Watchlist stats (total saved, watched, pending)
 
  
-## 🗂️ Pages
+## Pages
  
 ```
 /               → Home — browse all movies, search and filter by genre
@@ -32,7 +32,7 @@ A React practice project that covers 11 core React concepts — built as a simpl
  
 ---
  
-## 🛠️ Tech Stack
+## Tech Stack
  
 - [React 18](https://react.dev/)
 - [React Router v6](https://reactrouter.com/)
@@ -41,7 +41,7 @@ A React practice project that covers 11 core React concepts — built as a simpl
 - [Vite](https://vitejs.dev/)
 ---
  
-## 🚀 Getting Started
+## Getting Started
  
 ```bash
 # 1. Clone the repo
@@ -59,7 +59,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
  
 ---
  
-## 📁 Folder Structure
+## Folder Structure
  
 ```
 src/
@@ -87,10 +87,4 @@ src/
 ---
  
 
- 
-## 📝 License
- 
-This project is open source and available under the [MIT License](LICENSE).
- 
----
  
