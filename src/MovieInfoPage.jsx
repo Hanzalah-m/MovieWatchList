@@ -1,39 +1,28 @@
 import { memo } from 'react';
+import { useParams } from 'react-router-dom';
 import batman from './assets/images.jpg'
-import { useNavigate, Link } from "react-router-dom";
 
+const MovieInfoPage = ({ movies = [] }) => {
+    const { id } = useParams();
+    const movieId = Number(id);
+    const movie = movies.find((item) => item.id === movieId) || movies[0] || {};
 
-const MovieInfoPage = () => {
-    const Navbar = () => {
-        const navigate = useNavigate();
-
-        const handleNavigation = (route) => {
-            if (route.startsWith('#')) {
-                const section = document.querySelector(route);
-                if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                }
-            } else {
-                navigate(route);
-            }
-        }
-    };
     return (
         <div className='flex flex-col min-h-screen w-full p-8 gap-4 justify-center content-center bg-linear-to-br from-[#0a0f1e] via-[#141e39] to-[#2d5179]'>
             <div className='flex flex-col justify-center rounded-lg bg-[#ffffff35] content-center p-3 gap-1.5'>
                 <div className='flex'>
                     <div className='h-70 w-60 min-w-[15%] rounded-lg  overflow-hidden'>
-                        <img className='h-full w-full object-cover' src={batman} alt="poster" />
+                        <img className='h-full w-full object-cover' src={movie.image || batman} alt="poster" />
                     </div>
                     <div className='flex ml-3 flex-col p-2 gap-2 '>
                         <div className='text-2xl font-bold '>
-                            Dark Knights
+                            {movie.title || 'Movie not found'}
                         </div>
                         <div className='text-lg '>
-                            2010 scifi
+                            {movie.year || 'N/A'}, {movie.genre || 'Unknown'}
                         </div>
                         <div className=' text-xs text-yellow-600 '>
-                            rating
+                            {movie.rating || 'N/A'}
                         </div>
 
                     </div>

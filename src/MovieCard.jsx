@@ -17,10 +17,10 @@ const MovieCard = ({ movie, onAdd }) => {
     };
 
     return (
-        <div className='Card cursor-pointer flex flex-col justify-center content-center w-55 rounded-xl bg-[#ffffff81] p-2 '
-            onClick={() => handleNavigation("/MovieInfo")}
+        <div className='Card flex flex-col justify-center content-center w-55 rounded-xl bg-[#ffffff81] p-2 '
+            onClick={() => handleNavigation(`/MovieInfo/${movie.id}`)}
         >
-            <div className='h-50 justify-center content-center rounded-xl overflow-hidden'>
+            <div className='h-50 cursor-pointer justify-center content-center rounded-xl overflow-hidden'>
                 <img className='w-full h-full object-cover' src={movie.image} alt={`${movie.title} Poster`} />
             </div>
             <div className='h-40 justify-center content-center rounded-2xl px-2 overflow-hidden py-0'>
@@ -33,7 +33,7 @@ const MovieCard = ({ movie, onAdd }) => {
                         {movie.genre}
                     </span>
                 </div>
-                <button type='button' onClick={onAdd} className='mt-5 text-sm w-auto px-2.5 bg-[#ffff] hover:bg-[#525252c2] text-[#2a2b35db] py-1 rounded-xl'>
+                <button className='cursor-pointer' type='button' onClick={(e)=>{ e.stopPropagation(); onAdd(movie.id)}} className='mt-5 text-sm w-auto px-2.5 bg-[#ffff] hover:bg-[#525252c2] text-[#2a2b35db] py-1 rounded-xl'>
                     Add to Watchlist
                 </button>
             </div>

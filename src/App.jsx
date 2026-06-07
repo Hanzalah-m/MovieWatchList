@@ -29,7 +29,7 @@ function App() {
   }
 
   const handleRemoveFromWatchlist = (movieId) => {
-    setWatchlist((prev) => prev.filter((movie) => movie.id !== movieId))
+    setWatchlist((prev) => prev.filter((item) => item.id !== movieId))
   }
 
   return (
@@ -40,7 +40,7 @@ function App() {
           <Route path="/" element={<Home movies={availableMovies} onAddToWatchlist={handleAddToWatchlist} />} />
           <Route path="/MyList" element={<MyLists watchlistMovies={watchlist} onRemove={handleRemoveFromWatchlist} />} />
           <Route path="/AddMovie" element={<AddMoviePage />} />
-          <Route path="/MovieInfo" element={<MovieInfoPage />} />
+          <Route path="/MovieInfo/:id" element={<MovieInfoPage movies={availableMovies} />} />
         </Routes>
       </div>
     </BrowserRouter>
