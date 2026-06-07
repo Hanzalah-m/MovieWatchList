@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import './App.css'
 import Home from './Home'
 import MyLists from './MyLists'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MovieInfoPage from './MovieInfoPage'
 import AddMoviePage from './AddMoviePage'
 
@@ -13,17 +14,20 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      <MyLists/>
+    <BrowserRouter>
 
-      <MovieInfoPage/>
-      <AddMoviePage/>
-      
+      <div className="App">
+        <Navbar/>
 
-      
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/MyList" element={<MyLists/>} />
+          <Route path="/AddMovie" element={<AddMoviePage/>}/>
+
+        </Routes>
+
+      </div>
+    </BrowserRouter >
   )
 }
 
