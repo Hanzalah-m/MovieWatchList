@@ -1,6 +1,23 @@
 import { memo } from 'react';
 import batman from './assets/images.jpg'
+import { useNavigate, Link } from "react-router-dom";
+
+
 const MovieInfoPage = () => {
+    const Navbar = () => {
+        const navigate = useNavigate();
+
+        const handleNavigation = (route) => {
+            if (route.startsWith('#')) {
+                const section = document.querySelector(route);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                navigate(route);
+            }
+        }
+    };
     return (
         <div className='flex flex-col min-h-screen w-full p-8 gap-4 justify-center content-center bg-linear-to-br from-[#0a0f1e] via-[#141e39] to-[#2d5179]'>
             <div className='flex flex-col justify-center rounded-lg bg-[#ffffff35] content-center p-3 gap-1.5'>
