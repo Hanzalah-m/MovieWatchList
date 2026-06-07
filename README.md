@@ -1,6 +1,6 @@
 # Movie Watchlist App
  
-A React practice project that covers 11 core React concepts — built as a simple movie browsing and watchlist management app.
+A React practice project— built as a simple movie browsing and watchlist management app.
  
 
  
@@ -17,7 +17,7 @@ A React practice project that covers 11 core React concepts — built as a simpl
 - Filter by genre
 - Add or remove movies from your watchlist
 - Mark movies as watched / unwatched
-- Add custom movies via a form with validation
+- Add custom movies via a form
 - Light / dark mode toggle
 - Watchlist stats (total saved, watched, pending)
 
