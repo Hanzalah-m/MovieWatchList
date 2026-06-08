@@ -16,7 +16,7 @@ const MyLists = ({ watchlistMovies = [], onRemove }) => {
                     <div className='p-10 text-center text-[#1f2937]'>Your watchlist is empty. Add movies from Browse.</div>
                 ) : (
                     watchlistMovies.map((movie) => (
-                        <MovieCardList key={movie.id} movie={movie} onRemove={() => onRemove()} />
+                        <MovieCardList key={movie.id} movie={movie} onRemove={onRemove} />
                     ))
                 )}
             </div>

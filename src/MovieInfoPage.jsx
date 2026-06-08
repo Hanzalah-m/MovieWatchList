@@ -1,11 +1,12 @@
 import { memo } from 'react';
 import { useParams } from 'react-router-dom';
-import batman from './assets/images.jpg'
 
-const MovieInfoPage = ({ movies = [] }) => {
+
+const MovieInfoPage = ({ movies = [], onAddToWatchlist, onRemove, watchlistMovies = [] }) => {
     const { id } = useParams();
     const movieId = Number(id);
     const movie = movies.find((item) => item.id === movieId) || movies[0] || {};
+    const addedalr = watchlistMovies.some((item) => item.id === movie.id);
 
     return (
         <div className='flex flex-col min-h-screen w-full p-8 gap-4 justify-center content-center bg-linear-to-br from-[#0a0f1e] via-[#141e39] to-[#2d5179]'>
@@ -22,7 +23,7 @@ const MovieInfoPage = ({ movies = [] }) => {
                             {movie.year || 'N/A'}, {movie.genre || 'Unknown'}
                         </div>
                         <div className=' text-xs text-yellow-600 '>
-                            {movie.rating || 'N/A'}
+                            Rating - {movie.rating || 'N/A'}
                         </div>
 
                     </div>
@@ -32,14 +33,14 @@ const MovieInfoPage = ({ movies = [] }) => {
                 </div>
             </div>
             <div className=' flex content-center gap-4 '>
-                <button className='p-2 rounded-2xl bg-[#ffffff72]'>
-                    Add to WatchList
+                <button onClick={() => addedalr ? onRemove(movie.id) :onAddToWatchlist(movie)} className={`p-2 cursor-pointer rounded-2xl ${addedalr ? "bg-[#080d68] text-white hover:bg-[#05095e]" : "bg-[#ffffff73] hover:bg-[#525252c2]" }`}>
+                    {addedalr ? 'Added to Watchlist' : 'Add to WatchList'}
                 </button>
-                <div className='p-2 rounded-2xl bg-[#ffffff72]'>
+                <div className='p-2 cursor-pointer hover:bg-[#575454b6] rounded-2xl bg-[#ffffff73]'>
                     Mark as Watched
                 </div>
             </div>
-            <div className="flex flex-col w-full mt-4">
+            {/* <div className="flex flex-col w-full mt-4">
                 <div className="text-xl font-semibold mb-2 text-[#ffff] text-shadow-black">
                     More Like This
                 </div>
@@ -55,7 +56,7 @@ const MovieInfoPage = ({ movies = [] }) => {
                         Superman
                     </button>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     );
