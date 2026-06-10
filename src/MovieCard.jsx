@@ -19,13 +19,13 @@ const MovieCard = ({ movie, onAdd, onRemove, watchlistMovies = []}) => {
     };
 
     return (
-        <div className='Card flex flex-col justify-center content-center w-55 rounded-xl bg-[#ffffff81] p-2 '
+        <div className='Card select-none flex flex-col justify-center content-center w-70 rounded-xl bg-[#ffffff81] p-2 '
             onClick={() => handleNavigation(`/MovieInfo/${movie.id}`)}
         >
-            <div className='h-50 cursor-pointer justify-center content-center rounded-xl overflow-hidden'>
+            <div className='h-90 select-none cursor-pointer justify-center content-center rounded-xl overflow-hidden'>
                 <img className='w-full h-full object-cover' src={movie.image} alt={`${movie.title} Poster`} />
             </div>
-            <div className='flex flex-col h-50 justify-between content-center rounded-2xl px-2 overflow-hidden py-0'>
+            <div className='flex flex-col h-47 justify-between content-center rounded-2xl px-2 overflow-hidden py-0'>
                 <div>
                     <h5 className='text-xl bold font-semibold font-serif mt-4'>{movie.title}</h5>
                     <p className='mb-3 px-0.5 text-[#242b37] text-[15px]'>

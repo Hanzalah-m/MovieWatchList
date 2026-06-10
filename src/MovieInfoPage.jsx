@@ -9,28 +9,28 @@ const MovieInfoPage = ({ movies = [], onAddToWatchlist, onRemove, watchlistMovie
     const addedalr = watchlistMovies.some((item) => item.id === movie.id);
 
     return (
-        <div className='flex flex-col min-h-screen w-full p-8 gap-4 justify-center content-center bg-linear-to-br from-[#0a0f1e] via-[#141e39] to-[#2d5179]'>
+        <div className='flex mt-5 flex-col w-full p-8 gap-4 justify-center content-center'>
             <div className='flex flex-col justify-center rounded-lg bg-[#ffffff35] content-center p-3 gap-1.5'>
                 <div className='flex'>
-                    <div className='h-70 w-60 min-w-[15%] rounded-lg  overflow-hidden'>
+                    <div className='h-100 min-w-60 w-[68%] rounded-lg  overflow-hidden'>
                         <img className='h-full w-full object-cover' src={movie.image || batman} alt="poster" />
                     </div>
                     <div className='flex ml-3 flex-col p-2 gap-2 '>
-                        <div className='text-2xl font-bold '>
+                        <div className='text-4xl font-bold '>
                             {movie.title || 'Movie not found'}
                         </div>
-                        <div className='text-lg '>
+                        <div className='text-2xl '>
                             {movie.year || 'N/A'}, {movie.genre || 'Unknown'}
                         </div>
-                        <div className=' text-xs text-yellow-600 '>
+                        <div className=' text-lg text-yellow-600 '>
                             Rating - {movie.rating || 'N/A'}
                         </div>
-
+                        <div className='flex flex-wrap  text-[20px] font-medium font-serif mt-8 mr-6'>
+                            {movie.description || 'No description available'}
+                        </div>
                     </div>
                 </div>
-                <div className='text-lg font-medium font-serif mr-6'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores doloribus itaque corrupti nostrum, quaerat voluptatum labore necessitatibus quae beatae maxime inventore neque, eaque, delectus est sed quia voluptate consequuntur totam.
-                </div>
+                
             </div>
             <div className=' flex content-center gap-4 '>
                 <button onClick={() => addedalr ? onRemove(movie.id) :onAddToWatchlist(movie)} className={`p-2 cursor-pointer rounded-2xl ${addedalr ? "bg-[#080d68] text-white hover:bg-[#05095e]" : "bg-[#ffffff73] hover:bg-[#525252c2]" }`}>

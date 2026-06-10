@@ -72,7 +72,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App min-w-screen min-h-screen bg-linear-to-br from-[#0a0f1e] via-[#141e39] to-[#2d5179]">
+      <div className="App w-full min-h-screen bg-linear-to-br from-[#0a0f1e] via-[#141e39] to-[#2d5179]">
         <Navbar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
         <Routes>
           <Route path="/" element={<Home watchlistMovies={watchlist} movies={filteredMovies} onRemove={handleRemoveFromWatchlist}  onAddToWatchlist={handleAddToWatchlist} />} />

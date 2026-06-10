@@ -4,9 +4,16 @@ import reactLogo from './assets/react.svg'
 
 const Navbar = ({ searchQuery, onSearchChange }) => {
     const [active, setActive] = useState(true);
-    const tooglestate = ()=>{
-        setActive(prev => !prev)
-    }
+    const tooglestate = () => {
+        setActive(prev => {
+            const newState = !prev;
+            if (newState === true) {
+                onSearchChange(""); // clear search when hiding
+            }
+            return newState;
+        });
+    };
+
     const navigate = useNavigate();
 
     const handleNavigation = (route) => {
@@ -20,7 +27,7 @@ const Navbar = ({ searchQuery, onSearchChange }) => {
         }
     };
 
-    
+
 
     const handleSearchSubmit = (event) => {
         event.preventDefault();
@@ -38,7 +45,7 @@ const Navbar = ({ searchQuery, onSearchChange }) => {
 
             </div>
             <div className='flex items-center gap-12 px-1 py-2 '>
-                <form onSubmit={handleSearchSubmit} className={` ${active ? "hidden":"flex" } items-center h-10 gap-2 bg-[#141e39] px-2 rounded-full`}>
+                <form onSubmit={handleSearchSubmit} className={` ${active ? "hidden" : "flex"} items-center h-10 gap-2 bg-[#141e39] px-2 rounded-full`}>
                     <input
                         value={searchQuery}
                         onChange={(e) => onSearchChange(e.target.value)}

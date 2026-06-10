@@ -4,7 +4,7 @@ import MovieCard from './MovieCard';
 const Home = ({ movies = [], onAddToWatchlist, watchlistMovies,onRemove}) => {
     return (
         <div>
-            <div className='flex p-10 gap-10 flex-wrap '>
+            <div className='flex p-10 gap-10 flex-wrap justify-center w-full overflow-x-hidden '> 
                 {movies.map((movie) => (
                     <MovieCard
                         key={movie.id}

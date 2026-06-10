@@ -1,11 +1,74 @@
 [
-  { "id": 1, "title": "Inception", "genre": "Sci-Fi", "year": 2010, "rating": 8.8, "image": "Inception.jpg" },
-  { "id": 2, "title": "The Dark Knight", "genre": "Action", "year": 2008, "rating": 9.0, "image": "batman.jpg" },
-  { "id": 3, "title": "Interstellar", "genre": "Sci-Fi", "year": 2014, "rating": 8.6, "image": "interstellar.jpg" },
-  { "id": 4, "title": "No Country for Old Men", "genre": "Thriller", "year": 2007, "rating": 8.1, "image": "nocomen.jpg" },
-  { "id": 5, "title": "The Lord of the Rings", "genre": "Fantasy", "year": 2001, "rating": 8.9, "image": "Lordofrings.jpg" },
-
-  { "id": 6, "title": "Spider-Man: Homecoming", "genre": "Action", "year": 2017, "rating": 7.4, "image": "spiderman.jpg" },
-  { "id": 7, "title": "Iron Man", "genre": "Action", "year": 2008, "rating": 7.9, "image": "ironman.jpg" },
-  { "id": 8, "title": "The Dark Hut", "genre": "Horror", "year": 2020, "rating": 6.5, "image": "darkhut.jpg" }
+  { 
+    "id": 1, 
+    "title": "Inception", 
+    "genre": "Sci-Fi", 
+    "year": 2010, 
+    "rating": 8.8, 
+    "image": "Inception.jpg",
+    "description": "Dom Cobb is a skilled thief who specializes in extracting secrets from deep within the subconscious during the dream state. When he is offered a chance to erase his criminal past by performing the impossible task of inception—planting an idea instead of stealing one—he assembles a team to dive through multiple layers of dreams. As the mission grows more dangerous, Cobb must confront haunting memories that threaten to collapse the entire operation and blur the line between dreams and reality."
+  },
+  { 
+    "id": 2, 
+    "title": "The Dark Knight", 
+    "genre": "Action", 
+    "year": 2008, 
+    "rating": 9.0, 
+    "image": "batman.jpg",
+    "description": "Gotham City faces a new wave of terror when the Joker, a criminal mastermind with no clear motive, unleashes chaos across the city. Batman, Lieutenant Gordon, and District Attorney Harvey Dent form an alliance to stop him, but the Joker’s psychological warfare forces Batman to question his own limits and the sacrifices required to uphold justice. The battle becomes a gripping test of morality, identity, and the cost of heroism."
+  },
+  { 
+    "id": 3, 
+    "title": "Interstellar", 
+    "genre": "Sci-Fi", 
+    "year": 2014, 
+    "rating": 8.6, 
+    "image": "interstellar.jpg",
+    "description": "As Earth faces environmental collapse, former pilot Cooper joins a secret NASA mission to travel through a newly discovered wormhole in search of habitable worlds. Leaving behind his family, he ventures into the unknown with a team of scientists. Their journey challenges the boundaries of time, gravity, and human endurance, while Cooper struggles with the emotional weight of saving humanity and returning to his daughter before time runs out."
+  },
+  { 
+    "id": 4, 
+    "title": "No Country for Old Men", 
+    "genre": "Thriller", 
+    "year": 2007, 
+    "rating": 8.1, 
+    "image": "nocomen.jpg",
+    "description": "After stumbling upon a drug deal gone wrong and a suitcase filled with cash, Llewelyn Moss becomes the target of Anton Chigurh, a cold and relentless hitman. As the violent chase unfolds across the Texas desert, Sheriff Ed Tom Bell tries to make sense of the rising brutality in a world that seems to be slipping beyond his understanding. The film explores fate, morality, and the harsh realities of an unforgiving landscape."
+  },
+  { 
+    "id": 5, 
+    "title": "The Lord of the Rings", 
+    "genre": "Fantasy", 
+    "year": 2001, 
+    "rating": 8.9, 
+    "image": "Lordofrings.jpg",
+    "description": "When Frodo Baggins inherits a mysterious ring with unimaginable power, he learns it is the One Ring forged by the dark lord Sauron. To prevent the world from falling into darkness, Frodo joins a fellowship of heroes—humans, elves, dwarves, and hobbits—on a perilous journey to destroy the ring in the fires of Mount Doom. Their quest is filled with ancient magic, fierce battles, and the unbreakable bonds of friendship."
+  },
+  { 
+    "id": 6, 
+    "title": "Spider-Man: Homecoming", 
+    "genre": "Action", 
+    "year": 2017, 
+    "rating": 7.4, 
+    "image": "spiderman.jpg",
+    "description": "After the events of the Avengers, young Peter Parker tries to balance his life as a high school student with his growing responsibilities as Spider-Man. Eager to prove himself to Tony Stark, Peter takes on the Vulture, a dangerous criminal dealing in stolen alien technology. As the stakes rise, Peter must learn what it truly means to be a hero beyond the suit and gadgets."
+  },
+  { 
+    "id": 7, 
+    "title": "Iron Man", 
+    "genre": "Action", 
+    "year": 2008, 
+    "rating": 7.9, 
+    "image": "ironman.jpg",
+    "description": "Genius billionaire Tony Stark is captured by terrorists and forced to build a weapon, but instead he constructs a powerful armored suit to escape. Realizing the destructive impact of his company’s weapons, Stark refines the suit and becomes Iron Man, a hero determined to protect the world. His transformation marks the beginning of a new era of responsibility, innovation, and personal redemption."
+  },
+  { 
+    "id": 8, 
+    "title": "The Dark Hut", 
+    "genre": "Horror", 
+    "year": 2020, 
+    "rating": 6.5, 
+    "image": "darkhut.jpg",
+    "description": "A group of friends ventures deep into the forest and discovers an abandoned hut rumored to be cursed. As night falls, strange noises, eerie shadows, and supernatural events begin to unfold. Trapped inside with no escape, they must confront the dark history of the hut and the malevolent presence that awakens with their arrival."
+  }
 ]
