@@ -1,9 +1,9 @@
 [
-  { "id": 1, "title": "Inception", "genre": "Sci-Fi", "year": 2010, "rating": 8.8, "image": "tree.jpg" },
+  { "id": 1, "title": "Inception", "genre": "Sci-Fi", "year": 2010, "rating": 8.8, "image": "Inception.jpg" },
   { "id": 2, "title": "The Dark Knight", "genre": "Action", "year": 2008, "rating": 9.0, "image": "batman.jpg" },
-  { "id": 3, "title": "Interstellar", "genre": "Sci-Fi", "year": 2014, "rating": 8.6, "image": "tree.jpg" },
-  { "id": 4, "title": "No Country for Old Men", "genre": "Thriller", "year": 2007, "rating": 8.1, "image": "darkhut.jpg" },
-  { "id": 5, "title": "The Lord of the Rings", "genre": "Fantasy", "year": 2001, "rating": 8.9, "image": "tree.jpg" },
+  { "id": 3, "title": "Interstellar", "genre": "Sci-Fi", "year": 2014, "rating": 8.6, "image": "interstellar.jpg" },
+  { "id": 4, "title": "No Country for Old Men", "genre": "Thriller", "year": 2007, "rating": 8.1, "image": "nocomen.jpg" },
+  { "id": 5, "title": "The Lord of the Rings", "genre": "Fantasy", "year": 2001, "rating": 8.9, "image": "Lordofrings.jpg" },
 
   { "id": 6, "title": "Spider-Man: Homecoming", "genre": "Action", "year": 2017, "rating": 7.4, "image": "spiderman.jpg" },
   { "id": 7, "title": "Iron Man", "genre": "Action", "year": 2008, "rating": 7.9, "image": "ironman.jpg" },

@@ -15,6 +15,7 @@ const MovieCard = ({ movie, onAdd, onRemove, watchlistMovies = []}) => {
         } else {
             navigate(route);
         }
+        
     };
 
     return (
